@@ -97,7 +97,7 @@ void append(inf_float *a, unsigned int data)
     new_node->prev->next = new_node;
     a->size++;
 }
-node *getLocation(inf_float *a, intptr_t pos)
+node *getLocation(inf_float *a, intptr_t pos) //高速索引
 {
     if (pos < 0 || pos >= a->size)
     {
